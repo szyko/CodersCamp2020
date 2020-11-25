@@ -109,3 +109,4 @@ Pamiętaj tylko, że Ty korzystasz tutaj jedynie z HTML i CSS.
 Przygotowane projekty interfejsu użytkownika są tutaj po to, żebyś bez problemów postawił swoje pierwsze kroki w praktycznym wykorzystaniu HTML i CSS.
 Jednakże zachęcamy do wykonania czegoś, co ukaże Twoje wnętrze :) 
 Dobrej zabawy!
+"# CodersCamp2020" 
