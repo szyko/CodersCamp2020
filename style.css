@@ -9,34 +9,89 @@
 body {
     background-color: #333;
 }
+.logo a {
+    font-size: 1,5rem;
+}
+.navbar i {
+    margin-left: 70px;
+    margin-right: 20px;
+}
+.navbar .logo {
+    justify-content: flex-start;
+}
 .navbar {
     font-family: 'Raleway', sans-serif;
     height: 100px;
     padding-top: 50px;
     background-color: #fff;
 }
+.navbar .
 .navbar .flex {
     justify-content: space-between;
 }
 .navbar ul {
     display: flex;    
 }
-.logo a {
-    font-size: 1,5rem;
-}
-a {
+.navbar a {
     text-decoration: none;
     padding: 0 5px 5px 5px;
     margin:0 45px 0 45px;
     font-size: 1,3rem;
 }
-a:hover {
+.navbar a:hover {
     border-bottom: 1px solid #515151;
 }
 ul {
     list-style-type: none;
 
 }
+img {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+/* Header */
+
+.header .flex{
+    flex-direction: column;
+}
+
+.header {
+    height: 585px;
+    background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F939266168%2F960x0.jpg%3Ffit%3Dscale);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.header .container {
+    padding-bottom: 200px;
+}
+.welcome{
+    font-size: 7rem;
+    letter-spacing: 20px;
+    color: #fff;
+}
+.header p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.social a{
+    margin-right: 20px;
+}
+.social i {
+    color: #fff;
+}
+
+/* Multiple use */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .container {
     display: flex;
     max-width: 1440px;
