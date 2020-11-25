@@ -9,6 +9,9 @@
 body {
     background-color: #333;
 }
+a {
+    text-decoration:none;
+}
 .logo a {
     font-size: 1,5rem;
 }
@@ -16,16 +19,12 @@ body {
     margin-left: 70px;
     margin-right: 20px;
 }
-.navbar .logo {
-    justify-content: flex-start;
-}
 .navbar {
     font-family: 'Raleway', sans-serif;
     height: 100px;
     padding-top: 50px;
     background-color: #fff;
 }
-.navbar .
 .navbar .flex {
     justify-content: space-between;
 }
@@ -62,9 +61,6 @@ img {
     background-size: cover;
     color: #fff;
 }
-.header .container {
-    padding-bottom: 200px;
-}
 .welcome{
     font-size: 7rem;
     letter-spacing: 20px;
@@ -99,4 +95,21 @@ img {
     padding: 0 auto;
     justify-content: center;
     align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
