@@ -1,115 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+li, a {
+    font-size: 24px;
     color: #515151;
-    font-size: 16px;
-}
-body {
-    background-color: #333;
-}
-a {
-    text-decoration:none;
-}
-.logo a {
-    font-size: 1,5rem;
-}
-.navbar i {
-    margin-left: 70px;
-    margin-right: 20px;
-}
-.navbar {
-    font-family: 'Raleway', sans-serif;
-    height: 100px;
-    padding-top: 50px;
-    background-color: #fff;
-}
-.navbar .flex {
-    justify-content: space-between;
-}
-.navbar ul {
-    display: flex;    
-}
-.navbar a {
     text-decoration: none;
-    padding: 0 5px 5px 5px;
-    margin:0 45px 0 45px;
-    font-size: 1,3rem;
 }
-.navbar a:hover {
-    border-bottom: 1px solid #515151;
-}
-ul {
-    list-style-type: none;
-
-}
-img {
-    width: 100%;
-    background-repeat: no-repeat;
-}
-/* Header */
-
-.header .flex{
-    flex-direction: column;
-}
-
-.header {
-    height: 585px;
-    background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F939266168%2F960x0.jpg%3Ffit%3Dscale);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-}
-.welcome{
-    font-size: 7rem;
-    letter-spacing: 20px;
-    color: #fff;
-}
-.header p {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-.social a{
-    margin-right: 20px;
-}
-.social i {
-    color: #fff;
-}
-
-/* Multiple use */
-
-.flex {
+/* Navbar */
+.navbar{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.container {
-    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 30px;
+    height: 120px;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 auto;
-    justify-content: center;
-    align-items: center;
 }
-.grid {
-    display: grid;
-    grid-template-columns:1fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+
+.navbar .icon {
+    margin-right: auto;
 }
-.button {
+
+.navbar .icon i{
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
     display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: orange;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+.nav_links li:nth-child(4) {
+
+}
+
+/* Header */
+header {
+    max-width: 1440px;
+    height: 585px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #fff;
-    border: none;
-    border-radius: 5px;
+    background-image: url(img/1.jfif);
+    background-position:center;
+    background-size: cover;
+}
+
+header h1{
+    font-size: 100px;
+    letter-spacing: 0.02em;
+    color: #FFC53D;
+    margin-top: 70px;
+}
+header p{
+    margin-top: 20px;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+}
+
+.social a {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.social a:first-child {
+    margin-left: 0px;
+}
+
+/* Help */
+
+.help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 220px;
+    align-items: center;
+}
+.help h1 {
+    grid-column: 1/span2;
+    place-self: center;
+    font-size: 36px;
+}
+.btn{
+    display:block;
+    width: 200px;
+    padding: 20px;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    border-radius: 15px;
+    text-align: center;
+}
+.buttonleft {
+    justify-self: flex-end;
+    margin-right: 50px;
+}
+.buttonright{
+    justify-self: flex-start;
+    margin-left: 50px;
+}
+
+/* About me */
+
+.about{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.shadow {
+    width: 66%;
+    background-color:#FAFAFF;
+    padding-top: 30px;
+    padding-left: 100px;
+    height: 430px;
+    display: grid;
+    grid-template-rows: 1fr 280px 1fr;
+    
+}
+.shadow h1 {
+    font-size: 32px;
+    color: #222;
+    padding-left: 100px;
+ 
+}
+.information {
+    overflow: visible;
+    width: 1300px;
+    display:grid;
+    background-color: #fff;
+    grid-template-columns: 2fr 4fr 8fr;
+    justify-items: center;
+    align-items: center;
+    box-shadow:6px 6px 20px rgba(0, 0, 0, 0.20);
+}
+.image {
+    padding-top: 30px;
+    align-self: start;
+}
+.image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.info {
+    align-self: stretch;
+    padding-top: 50px;
+    font-size: 18px;
+}
+.info ul {
+    list-style: none;
+}
+.info li {
+    margin-top: 10px;
+}
+.info li:first-child {
+    margin-top: 0px;
+}
+.info .text-color{
+    color: #FFC53D ;
+}
+.description {
+    border-left: 4px dashed #FFC53D;
+    padding-left: 15px;
+    padding-top: 40px;
+    margin: 20px 0px;
+    font-size: 18px;
+    align-self: stretch;
+    word-spacing: 10px;
+}
+
+/* Skills */
+
+.skills{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.shadowright {
+    width: 66%;
+    background-color:#FAFAFF;
+    padding-top: 30px;
+    padding-left: 100px;
+    height: 430px;
+    display: grid;
+    grid-template-rows: 1fr 280px 1fr;
+    margin-left:auto;
+    box-shadow:6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.shadowright h1 {
+    font-size: 32px;
+    color: #222; 
+}
+.information2 {
+    position: relative;
+    left: -37.5%;
+    overflow: visible;
+    width: 1300px;
+    display:grid;
+    background-color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    box-shadow:6px 6px 20px rgba(0, 0, 0, 0.20);   
+}
+
+.card {
+    margin: 30px 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    display:grid;
+    justify-items: center;
+}
+.card p {
+    font-size: 24px;
+}
+.card h1{
+    color: #FFC53D;
+}
+
+.card:nth-child(2){
+    border-right: 4px dashed #FFC53D;
+    border-left: 4px dashed #FFC53D;
+}
+.card h1 {
+    margin: 20px;
 }
