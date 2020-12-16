@@ -81,6 +81,7 @@ header p{
 .social a {
     margin-left: 20px;
     color: #fff;
+    font-size: 30px;
 }
 
 .social a:first-child {
@@ -185,10 +186,12 @@ header p{
 }
 .info .text-color{
     color: #FFC53D ;
+    font-family: sans-serif;
 }
 .description {
     border-left: 4px dashed #FFC53D;
     padding-left: 15px;
+    padding-right: 20px;
     padding-top: 40px;
     margin: 20px 0px;
     font-size: 18px;
@@ -370,9 +373,26 @@ header p{
     color: #fff;
     font-size: 20px;
 }
-.left_contact a {
-    margin-left: 15px;
+.left_contact li a{
     color: #fff;
+    font-size: 20px;
+}
+.left_contact li a i{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.left_contact li a:first-child i{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 0px;
+}
+.left_contact li ul li {
+    font-size: 25px;   
+}
+.left_contact li ul li p{
+    font-family: sans-serif;
 }
 .left_contact a:first-child {
     margin-left: 0px;
@@ -403,9 +423,6 @@ header p{
     padding-top: 20px;
     margin-left: 72%;
 }
-.right_contact a {
- 
-}
 .right_contact a:hover {
     color: #FF9A3D;
     background: #fff;
@@ -420,6 +437,8 @@ header p{
     resize:vertical;
     resize:vertical;
     border-radius: 15px;
+    border: none;
+    background-color: #FAFAFF;
  }
  .name:focus{
      outline: none;
@@ -428,8 +447,10 @@ header p{
     height: 200px;
     width: 90%;
     padding: 5px 10px;
+    background-color: #FAFAFF;
     resize:vertical;
     resize:vertical;
+    border:none;
     border-radius: 15px;
     outline:none;
 }
