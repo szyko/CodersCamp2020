@@ -255,6 +255,7 @@ header p{
     margin: 20px;
 }
 
+/* Portfolio */
 .portfolio{
     width: 1440px;
     margin:0 auto;
@@ -327,6 +328,7 @@ header p{
     transition:0.3s ease-in-out;
     transform: scale(1.3);
 }
+
 
 /* Contact Us */
 
@@ -472,4 +474,88 @@ footer {
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px;
+}
+
+/* Tablets and under */
+@media(max-width: 768px) {
+    .right_contact h2::before{
+        display:none;
+    }
+    .information {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 700px;
+        text-align: center;
+    }
+    .image {
+        align-self: center;
+    }
+    .description {
+        border:none;
+    }
+    .shadowright {
+        margin-top: 350px;
+    }
+    .information2 {
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 350px;
+        height: 850px;
+    }
+    .card:nth-child(1){
+        border-bottom: 4px dashed #FFC53D;
+        padding: 0 60px;
+    }
+    .card:nth-child(2){
+        border: none;
+        border-bottom: 4px dashed #FFC53D;
+    }
+    .portfolio{
+        margin: 0 auto;
+        margin-top: 500px;
+        text-align: center; 
+        width: 768px;
+    }
+    .images div {
+        width: 50%;
+        height: 50px;
+    }
+    .images div p {
+        display: none;
+    }
+    .images div a {
+        margin-left: 70%;
+        margin-top: 30%;
+    }
+    .contact {
+        text-align: center;
+        width: 650px;
+    }
+    .left_contact li{
+        color: #fff;
+        font-size: 20px;
+        text-align: left;
+    }
+    .left_contact ul li a i:first-child  {
+        color: #fff;
+        font-size: 25px;
+    }
+    .left_contact ul li a {
+        color: #fff;
+        font-size: 14px;
+    }
+    .left_contact ul li a i  {
+        color: #fff;
+        font-size: 25px;
+    }
+    
+    .left_contact li ul li {
+        font-size: 15px;   
+    }
+    .right_contact ul li:last-child {
+        margin-left: 50%;
+    }
 }
